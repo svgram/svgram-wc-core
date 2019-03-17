@@ -1,7 +1,7 @@
 {
   "name": "@svgram/svgram-wc-core",
-  "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "version": "0.0.2",
+  "description": "A data driven diagram tool hosted by a SVG canvas in a webcomponent (WC)",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "unpkg": "dist/ionic.js",
@@ -29,7 +29,10 @@
     "type": "git",
     "url": "git+https://github.com/svgram/svgram-wc-core.git"
   },
-  "author": "",
+  "author": { 
+    "name": "Rasor",
+    "url": "https://github.com/rasor" 
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/svgram/svgram-wc-core/issues"

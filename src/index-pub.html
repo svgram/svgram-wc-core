@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="https://unpkg.com/@svgram/svgram-wc-core/dist/svgram-wc-core.js"></script>
+  <script type="text/javascript">
+    function setSv5Shapes(){
+      let container =  {
+      shapes: [{ "x": "100px", "y": "10px", "width": "80px", "heigth": "70px", "stroke": "red", "fill": "green"},
+      { "x": "200px", "y": "10px", "width": "70px", "heigth": "60px", "stroke": "blue", "fill": "brown"}]
+      };
+      let containerJson = JSON.stringify(container);
+      console.log(containerJson);
+      let canvas = document.getElementById("canvas");
+      canvas.setAttribute("content", containerJson);
+      console.log(canvas);      
+    };
+  </script>
+
+</head>
+<body onload="setSv5Shapes()">
+
+  <svgram-canvas id="canvas" first="Sv5" last="Canvas" content="" ></svgram-canvas>
+
+</body>
+</html>

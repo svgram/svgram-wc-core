@@ -6,6 +6,35 @@
 
 This is a data driven diagram tool hosted by a SVG canvas in a webcomponent (WC).
 
+Usage:  
+index.html  
+
+```html
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="https://unpkg.com/@svgram/svgram-wc-core/dist/svgram-wc-core.js"></script>
+  <script type="text/javascript">
+    function setSv5Shapes(){
+      let container =  {
+      shapes: [{ "x": "100px", "y": "10px", "width": "80px", "heigth": "70px", "stroke": "red", "fill": "green"},
+      { "x": "200px", "y": "10px", "width": "70px", "heigth": "60px", "stroke": "blue", "fill": "brown"}]
+      };
+      let containerJson = JSON.stringify(container);
+      let canvas = document.getElementById("canvas");
+      canvas.setAttribute("content", containerJson);
+    };
+  </script>
+</head>
+<body onload="setSv5Shapes()">
+  <svgram-canvas id="canvas" first="Sv5" last="Canvas" content="" ></svgram-canvas>
+</body>
+</html>
+```
+
 ## How this project was build
 
 ```bash
@@ -40,6 +69,13 @@ Thanks to
 * [Distributing Web Components Built with Stencil](https://stenciljs.com/docs/distribution)
 * [Contributing packages to the registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry)
 * [Creating Node.js modules](https://docs.npmjs.com/creating-node-js-modules)
-* [About scopes](https://docs.npmjs.com/about-scopes) 
+* [About scopes](https://docs.npmjs.com/about-scopes)
+* [Problems publishing scoped module · Issue #12194 · npm/npm](https://github.com/npm/npm/issues/12194#issuecomment-363055154)
+```bash
+npm test
+npm run build --prod
+npm login --scope=@svgram
+npm publish --access=public
+```
 
 The End.
