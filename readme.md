@@ -35,4 +35,11 @@ Thanks to
 
 * [Getting Started with StencilJS](https://cloudinary.com/blog/getting_started_with_stenciljs)
 
+### Npm
+
+* [Distributing Web Components Built with Stencil](https://stenciljs.com/docs/distribution)
+* [Contributing packages to the registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry)
+* [Creating Node.js modules](https://docs.npmjs.com/creating-node-js-modules)
+* [About scopes](https://docs.npmjs.com/about-scopes) 
+
 The End.
