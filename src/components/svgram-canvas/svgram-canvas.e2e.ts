@@ -1,20 +1,20 @@
 import { newE2EPage } from '@stencil/core/testing';
 
-describe('sv5-canvas', () => {
+describe('svgram-canvas', () => {
   it('renders', async () => {
     const page = await newE2EPage();
 
-    await page.setContent('<sv5-canvas></sv5-canvas>');
-    const element = await page.find('sv5-canvas');
+    await page.setContent('<svgram-canvas></svgram-canvas>');
+    const element = await page.find('svgram-canvas');
     expect(element).toHaveClass('hydrated');
   });
 
   it('renders changes to the name data', async () => {
     const page = await newE2EPage();
 
-    await page.setContent('<sv5-canvas></sv5-canvas>');
-    const component = await page.find('sv5-canvas');
-    const element = await page.find('sv5-canvas >>> div');
+    await page.setContent('<svgram-canvas></svgram-canvas>');
+    const component = await page.find('svgram-canvas');
+    const element = await page.find('svgram-canvas >>> div');
     expect(element.textContent).toEqual(`Hello, World! I'm `);
 
     component.setProperty('first', 'James');

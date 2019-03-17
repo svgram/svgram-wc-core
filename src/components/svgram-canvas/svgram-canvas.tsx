@@ -4,11 +4,11 @@ import { Shape } from '../../models/shape';
 import { Rect } from '../../models/rect';
 
 @Component({
-  tag: 'sv5-canvas',
-  styleUrl: 'sv5-canvas.css',
+  tag: 'svgram-canvas',
+  styleUrl: 'svgram-canvas.css',
   shadow: true
 })
-export class Sv5Canvas {
+export class SvgramCanvas {
   /**
    * The first name
    */

@@ -1,7 +1,7 @@
 import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'sv5',
+  namespace: 'svgram-wc-core',
   outputTargets:[
     { type: 'dist' },
     { type: 'docs' },

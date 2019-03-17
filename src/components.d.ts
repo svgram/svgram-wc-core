@@ -41,7 +41,7 @@ export namespace Components {
     'middle'?: string;
   }
 
-  interface Sv5Canvas {
+  interface SvgramCanvas {
     'content': any;
     /**
     * The first name
@@ -56,7 +56,7 @@ export namespace Components {
     */
     'middle': string;
   }
-  interface Sv5CanvasAttributes extends StencilHTMLAttributes {
+  interface SvgramCanvasAttributes extends StencilHTMLAttributes {
     'content'?: any;
     /**
     * The first name
@@ -76,12 +76,12 @@ export namespace Components {
 declare global {
   interface StencilElementInterfaces {
     'MyComponent': Components.MyComponent;
-    'Sv5Canvas': Components.Sv5Canvas;
+    'SvgramCanvas': Components.SvgramCanvas;
   }
 
   interface StencilIntrinsicElements {
     'my-component': Components.MyComponentAttributes;
-    'sv5-canvas': Components.Sv5CanvasAttributes;
+    'svgram-canvas': Components.SvgramCanvasAttributes;
   }
 
 
@@ -91,20 +91,20 @@ declare global {
     new (): HTMLMyComponentElement;
   };
 
-  interface HTMLSv5CanvasElement extends Components.Sv5Canvas, HTMLStencilElement {}
-  var HTMLSv5CanvasElement: {
-    prototype: HTMLSv5CanvasElement;
-    new (): HTMLSv5CanvasElement;
+  interface HTMLSvgramCanvasElement extends Components.SvgramCanvas, HTMLStencilElement {}
+  var HTMLSvgramCanvasElement: {
+    prototype: HTMLSvgramCanvasElement;
+    new (): HTMLSvgramCanvasElement;
   };
 
   interface HTMLElementTagNameMap {
     'my-component': HTMLMyComponentElement
-    'sv5-canvas': HTMLSv5CanvasElement
+    'svgram-canvas': HTMLSvgramCanvasElement
   }
 
   interface ElementTagNameMap {
     'my-component': HTMLMyComponentElement;
-    'sv5-canvas': HTMLSv5CanvasElement;
+    'svgram-canvas': HTMLSvgramCanvasElement;
   }
 
 
