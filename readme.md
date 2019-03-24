@@ -2,6 +2,11 @@
 
 # SVGram Core WebComponent
 
+[![npm version](https://badge.fury.io/js/%40svgram%2Fsvgram-wc-core.svg)](https://www.npmjs.com/package/@svgram/svgram-wc-core)
+[![GitHub version](https://badge.fury.io/gh/svgram%2Fsvgram-wc-core.svg)](https://github.com/svgram/svgram-wc-core)
+[![Dependency Status](https://david-dm.org/svgram/svgram-wc-core/status.svg)](https://david-dm.org/svgram/svgram-wc-core)
+[![devDependency Status](https://david-dm.org/svgram/svgram-wc-core/dev-status.svg)](https://david-dm.org/svgram/svgram-wc-core?type=dev)
+
 ## Intro
 
 This is a data driven diagram tool hosted by a SVG canvas in a webcomponent (WC).
@@ -16,7 +21,7 @@ index.html
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
-  <script src="https://unpkg.com/@svgram/svgram-wc-core/dist/svgram-wc-core.js"></script>
+  <script src="https://unpkg.com/@svgram/svgram-wc-core@0.0.2/dist/svgram-wc-core.js"></script>
   <script type="text/javascript">
     function setSv5Shapes(){
       let container =  {
@@ -60,11 +65,7 @@ Thanks to
 * [Stencil](https://stenciljs.com/)
 * Forked from [rasor/stncl-svg-poc](https://github.com/rasor/stncl-svg-poc)
 
-## Refs
-
-* [Getting Started with StencilJS](https://cloudinary.com/blog/getting_started_with_stenciljs)
-
-### Npm
+## Npm publish guides
 
 * [Distributing Web Components Built with Stencil](https://stenciljs.com/docs/distribution)
 * [Contributing packages to the registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry)
@@ -77,5 +78,13 @@ npm run build --prod
 npm login --scope=@svgram
 npm publish --access=public
 ```
+* Example of using Badges: [ckeditor5-build-classic](https://github.com/ckeditor/ckeditor5-build-classic)
+
+## Tutorials
+
+* Using SVG and css4 in Stencil: [Ionic 4 Tutorial: Mastering Web Components in Ionic 4](https://ionicthemes.com/tutorials/about/ionic-4-tutorial-mastering-web-components-in-ionic-4)
+* [Getting Started with StencilJS](https://cloudinary.com/blog/getting_started_with_stenciljs)
+* [Publishing a Web Component Using Stencil (And Using It Anywhere)](https://www.joshmorony.com/publishing-a-web-component-using-stencil-and-using-it-anywhere/)
+* [How I created SmileToUnlock with StencilJS - Part 1/2](https://codecraft.tv/blog/2017/10/20/smile-to-unlock-webcomponent-stenciljs-part-1/)
 
 The End.
