@@ -9,6 +9,11 @@ import { Rect } from '../../models/rect';
   shadow: true
 })
 export class SvgramCanvas {
+  // @Method()
+  //   newRect(): Promise<Rect>{
+  //     return Promise.resolve(new Rect());
+  //   }
+  @Prop() aRect: Rect;
   /**
    * The first name
    */

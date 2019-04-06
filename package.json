@@ -1,6 +1,6 @@
 {
   "name": "@svgram/svgram-wc-core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A data driven diagram tool hosted by a SVG canvas in a webcomponent (WC)",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -29,13 +29,13 @@
     "type": "git",
     "url": "git+https://github.com/svgram/svgram-wc-core.git"
   },
-  "author": { 
+  "author": {
     "name": "Rasor",
-    "url": "https://github.com/rasor" 
+    "url": "https://github.com/rasor"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/svgram/svgram-wc-core/issues"
   },
-  "homepage": "https://github.com/svgram/svgram-wc-core#readme"  
+  "homepage": "https://github.com/svgram/svgram-wc-core#readme"
 }

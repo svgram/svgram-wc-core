@@ -8,6 +8,9 @@
 import '@stencil/core';
 
 
+import {
+  Rect,
+} from './models/rect';
 
 
 export namespace Components {
@@ -42,6 +45,7 @@ export namespace Components {
   }
 
   interface SvgramCanvas {
+    'aRect': Rect;
     'content': any;
     /**
     * The first name
@@ -57,6 +61,7 @@ export namespace Components {
     'middle': string;
   }
   interface SvgramCanvasAttributes extends StencilHTMLAttributes {
+    'aRect'?: Rect;
     'content'?: any;
     /**
     * The first name

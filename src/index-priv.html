@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
-  <!-- <script src="/build/svgram-wc-core.js"></script> -->
+  <script src="/build/svgram-wc-core.js"></script>
   <script type="text/javascript">
     function setSv5Shapes(){
       let container =  {
@@ -18,22 +18,11 @@
       console.log(canvas);      
     };
   </script>
-  <script type="module" src="/build/svgram-wc-core.js"></script>
-  <script type="module">
-    //import './build/svgram-wc-core.js';
-    //import { Rect } from './build/svgram-wc-core.js';
-    //import * as wc from '/build/svgram-wc-core.js';
-    //import * as wc1 from '/build/svgram-wc-core/svgram-wc-core.core.js';
-    //import { Rect } from '/build/svgram-wc-core/svgram-canvas.entry.js';
-    //let r = new Rect();
-    //console.log(r);
-    //const canvasEl = (<HTMLSvgramCanvasElement>document.querySelector('#canvas'));
-  </script>
 
 </head>
-<body>
+<body onload="setSv5Shapes()">
 
-  <svgram-canvas id="canvas" first="Sv5" last="Canvas" content='{ "shapes": []}' ></svgram-canvas>
+  <svgram-canvas id="canvas" first="Sv5" last="Canvas" content="" ></svgram-canvas>
 
 </body>
 </html>
