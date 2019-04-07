@@ -11,6 +11,7 @@ export const config: Config = {
     }
   ],
   copy: [
-    { src: 'start.mjs', dest: './build/start.mjs' }
+    { src: 'start.mjs', dest: './build/start.mjs' },
+    { src: 'fallback.js', dest: './fallback.js' }
   ]  
 };
